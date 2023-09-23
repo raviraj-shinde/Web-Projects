@@ -1,0 +1,121 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*-------------------------------------------------------------*/
+
+.nav1 {
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px solid #dadada;
+    /*Important vw*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+.nav2 {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    /*Very Very Important*/
+}
+
+.nav2 h4 {
+    font-size: 110%;
+}
+
+.nav1 i {
+    font-weight: 800;
+    font-size: 130%;
+    display: none;
+}
+
+/*-------------------------------------------------------------*/
+
+.content {
+    height: calc(100% - 82px);
+    /* Space is needed in between minus*/
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left {
+    height: 100%;
+    width: 55%;
+    background-color: bisque;
+    padding: 5vw 4vw;
+}
+
+.left h1 {
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+}
+
+.left h1 span {
+    color: lightseagreen;
+}
+
+.left p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    width: 80%;
+    color: #666;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+
+}
+button{
+    font-size: 1.5vw;
+    padding: 1.3vw 2.3vw;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+
+
+}
+
+.right {
+    height: 100%;
+    width: 45%;
+    background-color: aqua;
+}
+
+/*-------------------------------------------------------------*/
+@media (max-width:600px) {
+    nav {
+        background-color: lightcoral;
+        color: white;
+        padding: 0 5vw;
+        height: 60px;
+    }
+
+    nav h2 {
+        font-size: 6vw;
+    }
+
+    nav h4 {
+        font-size: 4vw;
+        display: none;
+    }
+
+    nav i {
+        font-size: 5.5vw;
+        font-weight: 500;
+        display: block;
+    }
+
+}
